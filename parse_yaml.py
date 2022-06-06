@@ -11,8 +11,8 @@ def parse_yaml(url):
         for k, v in user.items():
 
             if v["permission"] == "admin":
-                return k
+                return v["name"]
 
 
 if __name__ == '__main__':
-    parse_yaml(url)
+    print(parse_yaml(url))
